@@ -1,41 +1,39 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
-<!-- Head -->
-{% include 'snippets/head.html' %}
+
+    <!-- Head -->
+    {% include 'snippets/head.html' %}
 
 <body>
 
   <!-- Navigation -->
   {% include 'snippets/navbar.html' %}
 
+  <!-- Page Content -->
+  <div class="container"> <!--awal container-->
 
-  <!-- Content -->
+    <div class="row"> <!-- awal wow-->
 
+      <!-- content -->
+      {% block content %}
+      {% endblock content %}
+      <!-- akhir content -->
 
-  {% block content %}
+      <!-- Sidebar Widgets -->
+      {% include 'snippets/sidebar.html' %}
+      <!-- akhir Sidebar Widgets -->
 
-  {% endblock content %}
+    </div> <!-- akhir row -->
+    
 
-
-  <!-- Sidebar Widgets Column -->
-  {% include 'snippets/sidebar.html' %}
-
-  </div> <!-- /.row -->
-
-
-  </div> <!-- /.container -->
-
+  </div> <!-- akhir container -->
+  
 
   <!-- Footer -->
-  <footer>
+  <footer class="bg-dark pt-4 pb-4">
     <div class="container">
-      <div class="row">
-        <p class="text-white text-center">
-          Copyright 2020 | Django Squad
-        </p>
-      </div>
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
     </div>
   </footer>
 
