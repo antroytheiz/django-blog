@@ -1,4 +1,5 @@
-### How to run this Project
+### Cara menjalankan Project
+
   * git clone https://github.com/antroytheiz/village.git
   * cd vilage/
   * python -m venv env-django
